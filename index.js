@@ -17,6 +17,7 @@ const goodbye = () => {
     odstavec.textContent = "Na shledanou"
 }
 
+
 /*
 Končit e-mail slovy „Na shledanou“ je nezdvořilé. 
 Přidejte proto do funkce goodbye parametr představující jméno pisatele e-mailu.
@@ -27,7 +28,7 @@ C:
 
 const goodbye2 = (pozdrav) => {
     let odstavec = document.querySelector('.email__closing')
-    odstavec.textContent = "S pozdravem,  " + pozdrav
+    odstavec.textContent = "S pozdravem, " + pozdrav
 }
 
 /*
