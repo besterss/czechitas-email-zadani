@@ -48,15 +48,25 @@ Z předchozího cvičení nám zůstala funkce goodbye.
  který vyrobí pomocí volání funkce goodbye.
 */
 
+const formalGoodbye = (pozdrav) => {
+    return 'S pozdravem, '+ pozdrav
+}
+
+const rudelGoodbye = (pozdrav) => {
+    return 'Sbohem a šáteček, ' +  pozdrav
+}
+
 const fillSubject = (subject) => {
     let subjectElement = document.querySelector('.email__subject')
     subjectElement.textContent = subject
 }
 
-const fillBody = (body, name) => {
+const fillBody = (body, name, goodbyeFunction) => {
     let bodyElement = document.querySelector('.email__body')
     bodyElement.textContent = body
-    goodbye2(name)
+
+    let odstavec = document.querySelector('.email__closing')
+    odstavec.textContent = goodbyeFunction(name)
 }
 
 
